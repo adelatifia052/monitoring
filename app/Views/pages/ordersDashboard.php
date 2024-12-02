@@ -8,7 +8,7 @@
         <div class="row">
           <div class="col-12">
             <div class="d-flex justify-content-between align-items-center">
-              <button type="button" class="btn btn-primary btn-sm waves-effect waves-light mb-3" data-toggle="modal" data-target="#addOrderModal">Tambah Order</button>
+              <button type="button" class="btn btn-primary btn-sm waves-effect waves-light mb-3" data-toggle="modal" data-target="#addOrderModal">Tambah Temuan</button>
               <?php if(session()->get('role') === 'superadmin'): ?>
               <button type="button" class="btn btn-success btn-sm waves-effect waves-light mb-3 ml-2" data-toggle="modal" data-target="#exportModal">Export</button>
               <?php endif ?>
@@ -17,7 +17,7 @@
               <thead>
                 <tr>
                   <th>Nama Pemesan</th>
-                  <th>Tanggal DB</th>
+                  <th>Tanggal</th>
                   <th>Nomor HP Pemesan</th>
                   <th>Status</th>
                   <th>Tanggal Pemesanan</th>
@@ -67,7 +67,7 @@
   <div class="modal-dialog modal-xl">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="myExtraLargeModalLabel">Tambah Order</h5>
+        <h5 class="modal-title" id="myExtraLargeModalLabel">Tambah Temuan</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -76,11 +76,11 @@
         <form id="form">
           <input hidden name="id" id="id"/>
           <div class="form-group form-group mb-4">
-            <label for="tanggal_db">Tanggal DB</label>
+            <label for="tanggal_db">Tanggal</label>
             <input type="date" class="form-control datepicker-here" data-language="en" name="tanggal_db" id="tanggal_db" required/>
           </div>
           <div class="form-group form-group mb-4">
-            <label for="alamat_db">Alamat DB</label>
+            <label for="alamat_db">Deskripsi Temuan</label>
             <textarea type="text" class="form-control" name="alamat_db" id="alamat_db" required></textarea>
           </div>
           <div class="form-group form-group mb-4" id="select">
@@ -96,9 +96,9 @@
             <input type="text" class="form-control" id="luas_sawah" name="luas_sawah" required> 
           </div>
           <div class="form-group form-group mb-4">
-            <label for="jenis_tanaman">Jenis Tanaman</label>
+            <label for="jenis_tanaman">Kategori Temuan</label>
             <select class="custom-select" name="jenis_tanaman" id="jenis_tanaman" required>
-              <option selected>Pilih Jenis Tanaman</option>
+              <option selected>Pilih Kategori</option>
               <?php foreach($jenis as $data): ?>
               <option value="<?= $data['id'] ?>"><?= $data['nama_tanaman'] ?></option>
               <?php endforeach ?>

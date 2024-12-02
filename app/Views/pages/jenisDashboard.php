@@ -21,7 +21,7 @@
                                                                                 <div class="form-group form-group-custom mb-4">
                                                                                     <input hidden name="id" id="id">
                                                                                     <input type="text" class="form-control" id="nama_tanaman" name="nama_tanaman" required>
-                                                                                    <label for="jenisname">Jenis Tanaman</label>
+                                                                                    <label for="jenisname">Kategori Temuan</label>
                                                                                 </div>
                                                                                 <div class="mt-4">
                                                                                     <button class="btn btn-primary waves-effect waves-light" onclick="saveJenis()">Save Jenis</button>
