@@ -97,7 +97,7 @@
                                                 </li>
                                                 <li class="nav-item">
                                                     <a class="nav-link" href="<?= base_url('dashboard/jenis') ?>">
-                                                        Data Jenis Tanaman
+                                                        Data Jenis
                                                     </a>
                                                 </li>
                                             <?php endif ?>

@@ -4,52 +4,53 @@
     <img src="images/logo-project.png" alt="Logo" width="120" height="80">
   </a>
 
-<h3 align="center">Sistem Informasi Pemesanan Jasa Penggilingan</h3>
+<h3 align="center">Aplikasi Monitoring Temuan SPI</h3>
 
   <p align="center">
-    Sistem informasi pemesanan yang digunakan untuk mempermudahkan distribusi jasa.
+    Aplikasi Monitoring Temuan SPI.
     <br />
   </p>
 </div>
 
 ### Built With
 
-* CI4
+- CI4
 
 ### Prerequisites
 
 Penting! install bahan dibawah ini:
-* composer
-* phpmyadmin (xampp,laragon)
-* php-8+
-* php-ext: mbstring & intl
-* terminal/cmd (administrator/root)
+
+- composer
+- phpmyadmin (xampp,laragon)
+- php-8+
+- php-ext: mbstring & intl
+- terminal/cmd (administrator/root)
 
 ### Installation
 
-* Install Dependencies |
+- Install Dependencies |
   Jika terjadi error, hapus composer.lock terlebih dahulu
-   ```sh
-   composer install
-   ```
-* Create Database
-   ```sh
-   php spark db:create sipjp
-   ```
-* Migrate Database or Refresh
-   ```sh
-   php spark migrate
-   ```
-   ```sh
-   php spark migrate:refresh
-   ```
-* Seeding Database:table Superadmin
-   ```sh
-   php spark db:seed Superadmin
-   ```
-   username: superadmin
-   password: superadmin
-* Run App
-   ```sh
-   php spark serve
-   ```
+  ```sh
+  composer install
+  ```
+- Create Database
+  ```sh
+  php spark db:create sipjp
+  ```
+- Migrate Database or Refresh
+  ```sh
+  php spark migrate
+  ```
+  ```sh
+  php spark migrate:refresh
+  ```
+- Seeding Database:table Superadmin
+  ```sh
+  php spark db:seed Superadmin
+  ```
+  username: superadmin
+  password: superadmin
+- Run App
+  ```sh
+  php spark serve
+  ```
