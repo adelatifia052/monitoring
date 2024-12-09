@@ -55,7 +55,7 @@ class OrdersController extends BaseController
             } else {
                 $content = $orderModel->getOrders();
                 $admin = $userModel->getUserWithParams('admin');
-                $page = 'List All Orders';
+                $page = 'Menampilkan Daftar Temuan';
             }
             
             $jenis = $jenisModel->findAll();
