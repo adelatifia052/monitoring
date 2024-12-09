@@ -30,7 +30,7 @@
                                                         <li class="list-group-item">
                                                             <div class="media my-2">
                                                                 <div class="media-body">
-                                                                    <p class="text-muted mb-2">Total Orders</p>
+                                                                    <p class="text-muted mb-2">Total Temuan</p>
                                                                     <h5 class="mb-0"><?= $order ?></h5>
                                                                 </div>
                                                                 <div class="icons-lg ml-2 align-self-center">
