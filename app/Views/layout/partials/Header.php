@@ -58,7 +58,7 @@
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="<?= base_url('dashboard/client/'.session()->get('username')) ?>">
-                                                My Orders
+                                                Daftar Temuan
                                             </a>
                                         </li>
                                         <?php elseif(!session()->get('LoginTrue')): ?>
@@ -76,7 +76,7 @@
                                                 </li>
                                                 <li class="nav-item">
                                                     <a class="nav-link" href="<?= base_url('dashboard/orders') ?>">
-                                                        Data Orders
+                                                        Daftar Temuan
                                                     </a>
                                                 </li>
                                             <?php elseif(session()->get('role') == 'superadmin'): ?>
@@ -92,7 +92,7 @@
                                                 </li>
                                                 <li class="nav-item">
                                                     <a class="nav-link" href="<?= base_url('dashboard/orders') ?>">
-                                                        Data Orders
+                                                        Daftar Temuan
                                                     </a>
                                                 </li>
                                                 <li class="nav-item">

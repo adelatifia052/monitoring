@@ -47,7 +47,7 @@ class ClientController extends BaseController
             $role = session()->get('role');
             $content = $orderModel->getOrderByIdUser(session()->get('id'));
             $admin = $userModel->getUserWithParams('admin');
-            $page = 'My Orders';
+            $page = 'Daftar Temuan';
             $jenis = $jenisModel->findAll();
         }
         

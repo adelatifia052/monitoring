@@ -33,7 +33,7 @@
                   <td><?= $data->nomor_user ?></td>
                   <td>
                     <?php if($data->status == 'menunggu_konfirmasi'): ?>
-                    <span class="badge-pill badge-warning"> Menunggu Konfirmasi</span>
+                    <span class="badge-pill badge-warning"> Menunggu Tindaklanjuti</span>
                     <?php elseif($data->status == 'dalam_progres'): ?>
                     <span class="badge-pill badge-primary"> Dalam Progres</span>
                     <?php elseif($data->status == 'selesai'): ?>
@@ -92,7 +92,7 @@
             <input type="text" class="form-control" id="nomor_user" name="nomor_user" required>
           </div>
           <div class="form-group form-group mb-4">
-            <label for="luas_sawah">Luas Sawah</label>
+            <label for="luas_sawah">Rekomendasi Perbaikan</label>
             <input type="text" class="form-control" id="luas_sawah" name="luas_sawah" required> 
           </div>
           <div class="form-group form-group mb-4">
@@ -120,7 +120,7 @@
             </select>
           </div>
           <div class="mt-4">
-            <button class="btn btn-primary waves-effect waves-light" onclick="saveOrder()">Save Order</button>
+            <button class="btn btn-primary waves-effect waves-light" onclick="saveOrder()">Simpan Temuan</button>
           </div>
         </form>
       </div>
